@@ -1,0 +1,84 @@
+/*** Стандартные настройки ***/
+a{
+	text-decoration: none;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/***Header menu***/
+nav ul ul{
+	display: none;
+}
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul {//Первыей уровень списка
+	background: #c9c9c9; //Если браузер не потдерживае градиент
+	background: linear-gradient(top, #c9c9c9 0%, #dedede 100%);
+	background: -moz-linear-gradient(top, #c9c9c9 0%, #dedede 100%);
+	background: -webkit-linear-gradient(top, #c9c9c9 0%, #dedede 100%);
+	background: -o-linear-gradient(top, #c9c9c9 0%, #dedede 100%);
+	padding:  0  20px;
+	position: relative;
+	display: inline-block;
+	width: 450px;
+}
+nav >  ul > li{
+	float: left;
+	border-right: 1px solid #a5a5a5;
+	font-weight: 600;
+}
+nav >  ul > li:first-child{
+	border-left: 1px solid #a5a5a5;
+	margin-left:73px; 
+}
+nav >  ul > li span{
+	font-size: 10px;
+	color:#989898;
+}
+nav > ul > li > a:hover{
+	color: #b3403b;
+	border-bottom:3px solid #b3403b;
+}
+nav ul li a{
+font-weight: 600;
+display: block;
+padding: 10px 60px 10px 10px;
+color:#555454;
+}
+nav ul ul {
+	border-top:10px solid #fff;
+	min-height:130px;
+	background: #dadada;
+	border-radius: 5px;
+	padding: 0;
+	position: absolute;
+	top:100%;
+	width: 220px;
+	font-weight: normal;
+}
+nav ul ul li{
+	float: none;
+	border-bottom:1px solid #c4c4c4;
+	position: relative;
+}
+nav ul ul li a{
+	padding: 15px 40px;
+	color: #555454;
+}
+nav ul ul li a:hover{
+	color: #b3403b;
+}
+nav ul ul ul{
+	border-left: 10px solid #fff;
+	position: absolute;
+	top: 0;
+	left:100%;
+}
